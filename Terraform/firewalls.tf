@@ -4,7 +4,7 @@ resource "google_compute_firewall" "working-vpc-firewwall" {
 source_ranges = ["0.0.0.0/0"]
   allow {
     protocol = "tcp"
-    ports    = ["80", "8080", "22"]
+    ports    = ["80", "22"]
   }
 }
 
